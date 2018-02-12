@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "canadacentral"
+        },
+        "virtualMachineName": {
+            "value": "GurbWebServer"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "adminUsername": {
+            "value": "gbilnadmin"
+        },
+        "virtualNetworkName": {
+            "value": "GurbindarWebApp-Network"
+        },
+        "networkInterfaceName": {
+            "value": "gurbwebserver764"
+        },
+        "networkSecurityGroupName": {
+            "value": "GurbWebServer-nsg"
+        },
+        "adminPassword": {
+            "value": "Password12345678"
+        },
+        "subnetName": {
+            "value": "GurbindarWebApp-WebServers"
+        },
+        "publicIpAddressName": {
+            "value": "GurbWebServer-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "UTC"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Disabled"
+        },
+        "customizationScript": {
+            "value": "http://www.biln.ca/manulife-demo/configure-webserver.ps1"
+        },
+        "customizationScriptParams": {
+            "value": ""
+        }
+    }
+}

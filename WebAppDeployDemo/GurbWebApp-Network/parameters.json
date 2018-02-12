@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "networkName": {
+            "value": "GurbindarWebApp-Network"
+        },
+        "location": {
+            "value": "canadacentral"
+        },
+        "addressPrefix": {
+            "value": "192.168.99.0/24"
+        },
+        "subnetName": {
+            "value": "GurbindarWebApp-WebServers"
+        },
+        "subnetAddressPrefix": {
+            "value": "192.168.99.0/27"
+        },
+        "enableDdosProtection": {
+            "value": "false"
+        }
+    }
+}
